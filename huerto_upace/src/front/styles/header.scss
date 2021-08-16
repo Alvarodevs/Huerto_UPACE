@@ -1,8 +1,11 @@
 #header {
     justify-content: space-between;
-    width: 100vw;
+    width: 99vw;
+    grid-area: 1 / 1 / 2 / 9;
     flex-wrap: nowrap;
     background-color: #fff;
+    box-sizing: border-box;
+    margin: auto;
 }
 .logos-navbar img{
     margin-left: 1rem;

@@ -1,0 +1,22 @@
+.products-container{
+    margin-left: 0;
+    box-sizing: border-box;
+    width: 99vw;
+    flex-wrap: wrap !important;
+    background-color: orange;
+    justify-content: space-evenly;
+    
+}
+
+.product-card1{
+    grid-area: 3 / 1 / 4 / 3
+}
+.product-card2{
+    grid-area: 3 / 3 / 4 / 5;
+}
+.product-card3{
+    grid-area: 3 / 5 / 4 / 7;
+}
+.product-card4{
+    grid-area: 3 / 7 / 4 / 9;
+}

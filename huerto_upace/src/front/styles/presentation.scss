@@ -1,0 +1,14 @@
+.presentation-container{
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    grid-area: 2 / 1 / 3 / 9;
+    
+    img{
+        height: 17em;
+    }
+}
+
+.carousel{
+    width: 100vw;
+}

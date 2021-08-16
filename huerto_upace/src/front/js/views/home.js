@@ -1,12 +1,15 @@
 import React from 'react'
-
+import { Presentation } from '../components/Presentation';
+import { Products } from '../components/ProductCard';
 
 
 export const Home = () => {
 
     return(
-        <h1>HELLO WORLD</h1>
-
+        <>
+            <Presentation/>
+            <Products/>
+        </>
     )
 
 };
