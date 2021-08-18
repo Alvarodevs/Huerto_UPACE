@@ -32,7 +32,7 @@ export const Products = () => {
                 </Card>
 
                 <Card className="product-card4 product-card border-0" style={{ width: '15rem' }}>
-                    <Card.Img variant="top" src=".\images\Tomato-icon.png" />
+                    <Card.Img variant="top" src=".\images\others.png" />
                     <Card.Body>
                         <Card.Title className="pt-3">Otros productos</Card.Title>
                     </Card.Body>

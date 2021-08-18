@@ -5,7 +5,10 @@ export const AboutUs = () => {
 
 
     return(
+        <>
+        
         <div className="about">
+        <h3 className="text-center pb-2">Conócenos</h3>
             <p>
             Denominado también como Unidad de Estancia Diurna con Terapia Ocupacional, en la actualidad, cuenta con 35 plazas acreditadas. Al igual que la Unidad de Estancia Diurna (UED), agrupa a personas con parálisis cerebral de más de 16 años, sin embargo, en este caso les ofrece además la posibilidad de desarrollar sus capacidades en tareas laborales y ocupacionales con objeto de que puedan conseguir formación, integración y normalización en sus vidas tanto en el ámbito personal como social.
             Por este motivo, a los usuarios y usuarias de la Unidad de Estancia Diurna con Terapia Ocupacional, UPACE San Fernando les ofrece talleres que van desde Jardinería, Albañilería, hasta Carpintería y Cerámica, pasando por Manualidades.
@@ -18,6 +21,6 @@ export const AboutUs = () => {
             </p>
 
         </div>
-        
+        </>
     );
 };
