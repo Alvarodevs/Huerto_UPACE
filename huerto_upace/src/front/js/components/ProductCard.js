@@ -10,31 +10,31 @@ export const Products = () => {
         
             <div className="products-container">
             
-                <Card className="product-card1 product-card" style={{ width: '15rem' }}>
+                <Card className="product-card1 product-card border-0" style={{ width: '15rem' }}>
                     <Card.Img variant="top" src=".\images\Tomato-icon.png" />
                     <Card.Body>
                         <Card.Title>Hortalizas de temporada</Card.Title>
                     </Card.Body>
                 </Card>
 
-                <Card className="product-card2 product-card" style={{ width: '15rem' }}>
-                    <Card.Img variant="top" src=".\images\Tomato-icon.png" />
+                <Card className="product-card2 product-card border-0" style={{ width: '15rem' }}>
+                    <Card.Img variant="top" src=".\images\sunflower.jpeg" />
                     <Card.Body>
-                        <Card.Title>Flores</Card.Title>
+                        <Card.Title className="pt-2">Flores</Card.Title>
                     </Card.Body>
                 </Card>
 
-                <Card className="product-card3 product-card" style={{ width: '15rem' }}>
-                    <Card.Img variant="top" src=".\images\Tomato-icon.png" />
+                <Card className="product-card3 product-card border-0" style={{ width: '15rem' }}>
+                    <Card.Img variant="top" src=".\images\maceta.png" />
                     <Card.Body>
-                        <Card.Title className="card-title">Macetas</Card.Title>
+                        <Card.Title className="pt-2">Macetas</Card.Title>
                     </Card.Body>
                 </Card>
 
-                <Card className="product-card4 product-card" style={{ width: '15rem' }}>
+                <Card className="product-card4 product-card border-0" style={{ width: '15rem' }}>
                     <Card.Img variant="top" src=".\images\Tomato-icon.png" />
                     <Card.Body>
-                        <Card.Title>Otros productos</Card.Title>
+                        <Card.Title className="pt-3">Otros productos</Card.Title>
                     </Card.Body>
                 </Card>
             </div>

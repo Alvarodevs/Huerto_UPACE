@@ -1,6 +1,15 @@
 .gallery-container{
-     grid-area: 4 / 3 / 5 / 5;
      background-color: orange;
-     width: 47vw;
-     margin: 0.5em 0.5em;
+     width: 45vw;
+     margin: auto 0;
 }
+
+@media (max-width: 550px){
+     
+     .gallery-container{
+         width: 90vw;
+         height: max-content;
+         margin: auto;
+         overflow: visible
+     }
+ }

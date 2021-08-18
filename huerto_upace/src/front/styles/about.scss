@@ -1,6 +1,6 @@
 .about { 
-    grid-area: 4 / 1 / 5 / 5; 
-    margin: 0.5em 0.5em;
+    //grid-area: 4 / 1 / 5 / 3; 
+    margin: auto 2em;
     padding-left: 1em;
     width: 48vw;
     height: 30vh;
@@ -10,9 +10,10 @@
     overflow-y: scroll;
 }
 .container-about-gallery{
+    grid-area: 4 / 1 / 5 / 5;
     display: flex;
     flex-direction: row;
-    //flex-wrap: wrap;
+    
 }
 
 //MEDIA QUERYS
@@ -20,9 +21,17 @@
     .container-about-gallery{
         flex-wrap: wrap;
         width: 100vw;;
-    }
+    };
     .about {
-        //width: max-content;
-        margin: 0.5em;
+        width: 90vw;
+        height: max-content;
+        margin: auto;
+        overflow: visible
+    };
+    .gallery-container{
+        width: 90vw;
+        height: max-content;
+        margin: auto;
+        overflow: visible
     }
 }

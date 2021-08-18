@@ -12,8 +12,10 @@ export const Home = () => {
         <>
             <Presentation/>
             <Products/>
-            {/*<AboutUs/>
-            <Gallery/> */}
+            <div className="container-about-gallery">
+                <AboutUs/>
+                <Gallery/>
+            </div>
         </>
     )
 
