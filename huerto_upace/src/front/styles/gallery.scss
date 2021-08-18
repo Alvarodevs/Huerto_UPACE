@@ -1,21 +1,35 @@
 .gallery-container{
-     background-color: orange;
+     
      width: 45vw;
-     margin: auto 0;
+     height: 35vh;
+     margin: auto auto;
+     padding-left: 2px;
+     display: flex;
+     flex-wrap: wrap;
+     overflow: scroll;
+     justify-content: space-around;
 }
 
 .image-card{
-     background-color: cyan;
-     width: 10em;
-     height: 10em;
-     border-radius: 10px;
+     background-color: #000;
+     margin: 0.3em 0.3em;
+     width: 6em;
+     height: 6em;
+          img{
+          border-radius: 10px;
+          }
+}
+.image-card:hover{
+     img{
+          box-shadow: 0.2px 0.2px 0.2em 0.2em #32C965;
+     }
 }
 @media (max-width: 550px){
      
      .gallery-container{
-         width: 90vw;
+         width: 98vw;
          height: max-content;
-         margin: auto;
+         margin: auto auto;
          overflow: visible
      }
  }
