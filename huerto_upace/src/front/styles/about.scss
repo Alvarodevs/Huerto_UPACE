@@ -1,0 +1,28 @@
+.about { 
+    grid-area: 4 / 1 / 5 / 5; 
+    margin: 0.5em 0.5em;
+    padding-left: 1em;
+    width: 48vw;
+    height: 30vh;
+    padding-right: 1em;
+    background-color: palegreen;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.container-about-gallery{
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+}
+
+//MEDIA QUERYS
+@media (max-width: 550px){
+    .container-about-gallery{
+        flex-wrap: wrap;
+        width: 100vw;;
+    }
+    .about {
+        //width: max-content;
+        margin: 0.5em;
+    }
+}

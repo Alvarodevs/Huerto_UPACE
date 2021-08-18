@@ -2,26 +2,48 @@
 @import "./header.scss";
 @import "./presentation.scss";
 @import "./products.scss";
+@import "./about.scss";
+@import "./gallery.scss";
 
 body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.5fr repeat(3, 1fr) repeat(2, 0.5fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    box-sizing: border-box;
+    //box-sizing: border-box;
     overflow: auto; 
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #32C965; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #259249; 
+      }
 };
 
 //PLANTILLA GRID
 // .header { grid-area: 1 / 1 / 2 / 9; } --> OK
-// .presentation { grid-area: 2 / 1 / 3 / 9; }
-// .card-product { grid-area: 3 / 1 / 4 / 3; }
-// .card-product { grid-area: 3 / 3 / 4 / 5; }
-// .card-product { grid-area: 3 / 5 / 4 / 7; }
-// .card-product { grid-area: 3 / 7 / 4 / 9; }
+// .presentation { grid-area: 2 / 1 / 3 / 9; } --> OK
+// .product-card1 { grid-area: 3 / 1 / 4 / 3; } --> OK
+// .product-card2 { grid-area: 3 / 3 / 4 / 5; } --> OK
+// .product-card3 { grid-area: 3 / 5 / 4 / 7; } --> OK
+// .product-card4 { grid-area: 3 / 7 / 4 / 9; } --> OK
 // .about { grid-area: 4 / 1 / 5 / 5; }
 // .gallery { grid-area: 4 / 5 / 5 / 9; }
 // .collaboration { grid-area: 5 / 1 / 6 / 3; }
