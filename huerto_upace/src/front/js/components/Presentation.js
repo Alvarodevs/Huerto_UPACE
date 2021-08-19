@@ -11,7 +11,7 @@ export const Presentation = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src='http://lorempixel.com/400/200/sports/1/Dummy-Text/'
+                        src='http://lorempixel.com/400/200/sports/1/'
                         alt="First slide"
                     />
                     {/* <Carousel.Caption>
@@ -22,7 +22,7 @@ export const Presentation = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="http://lorempixel.com/400/200/sports/2/Dummy-Text/"
+                        src="http://lorempixel.com/400/200/sports/2/"
                         alt="Second slide"
                     />
 
@@ -34,7 +34,7 @@ export const Presentation = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="http://lorempixel.com/400/200/sports/3/Dummy-Text/"
+                        src="http://lorempixel.com/400/200/sports/3/"
                         alt="Third slide"
                     />
 

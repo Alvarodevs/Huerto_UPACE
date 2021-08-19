@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import { Home } from './views/home';
-
+import { Footer } from './components/Footer';
 
 
 export const Layout = () => {
@@ -35,8 +35,8 @@ export const Layout = () => {
         <Route exact path="/profile">
           <Profile />
         </Route>
-
-			<Footer /> */}
+       */}
+			<Footer />
 		</>
 	);
 

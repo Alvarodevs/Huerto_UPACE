@@ -5,7 +5,6 @@
     width: 48vw;
     height: 35vh;
     padding-right: 1em;
-    //background-color: palegreen;
     box-sizing: border-box;
     overflow-y: scroll;
 }
@@ -13,7 +12,7 @@
     grid-area: 4 / 1 / 5 / 5;
     display: flex;
     flex-direction: row;
-    
+    //overflow:hidden;
 }
 
 //MEDIA QUERYS
