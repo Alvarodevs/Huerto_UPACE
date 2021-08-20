@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Navbar, Nav } from 'react-bootstrap';
+import { Login } from './LoginForm';
 
 
 export const Header = () => {
-
+    const [show, setShow] = useState(false);
+	const handleShow = () => setShow(true);
+    
 
     return (
         <Navbar id="header" collapseOnSelect expand="lg" variant="light" >
@@ -21,9 +24,15 @@ export const Header = () => {
 
 
             <Nav className="buttons-container">
-                <Nav.Link href="#contact-info"><img className="button-navbar" src="images/info.svg" alt="Info icon" /></Nav.Link>
-                <Nav.Link href="#login"><img className="button-navbar" src="images/login-icon.svg" alt="Login icon" /></Nav.Link>
-                <Nav.Link href="#cart"><img className="button-navbar" src="images/shopping-basket.svg" alt="Cart" /></Nav.Link>
+                <Nav.Link><img className="button-navbar" src="images/info.svg" alt="Info icon" /></Nav.Link>
+
+                <Nav.Link >
+                    
+                    <img className="button-navbar" src="images/login-icon.svg" alt="Login icon" onClick={handleShow}/>
+                    <Login show={show} onHide={() => setShow(false)}/>
+                </Nav.Link>
+
+                <Nav.Link><img className="button-navbar" src="images/shopping-basket.svg" alt="Cart" /></Nav.Link>
             </Nav>
         </Navbar >
     )

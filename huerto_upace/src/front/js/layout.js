@@ -1,44 +1,37 @@
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+//Components
 import { Header } from './components/Header';
 import { Home } from './views/home';
 import { Footer } from './components/Footer';
+import { Registration } from "./components/Registration";
 
 
 export const Layout = () => {
   return (
     <>
-      <Header/>
-      <Home/>
-        {/* <Route exact path="/home">
-          <Home />
-        </Route>
+      <BrowserRouter>
+        <Header />
 
-        <Route exact path="/weekjumbotron">
-          <WeekJumbo />
-        </Route>
+        <Switch>
 
-        <Route exact path="/recipe_detail_jumbo">
-          <RecipeDetail />
-        </Route>
+          
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/registration">
+            <Registration />
+          </Route>
 
-        <Route exact path="/userprofile">
-          <Userprofile />
-        </Route>
+        </Switch>
 
-        <Route exact path="/new_week">
-          <NewWeek />
-        </Route>
-
-        <Route exact path="/weeks">
-          <AllWeeks />
-        </Route>
-
-        <Route exact path="/profile">
-          <Profile />
-        </Route>
-       */}
-			<Footer />
-		</>
-	);
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
 
 };
 

@@ -1,0 +1,29 @@
+.registration-form-container{
+    width: 60vw;
+    justify-content: center;
+    margin: auto;
+    padding: 1em 2em;
+    border: none;
+    box-shadow: 0.3em 0.3em 0.5em #32C965, -0.3em -0.3em 0.5em #32C965;
+    cursor: default;
+}
+.form-group{
+    text-align: center;
+}
+.card:hover {
+    cursor: default;
+}
+#input{
+    cursor: text;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+}
+#input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #FF3135;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #FF3135;
+}
