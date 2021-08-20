@@ -3,7 +3,8 @@
     height: 40vh;
     grid-area: 5 / 1 / 6 / 5;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    //flex-direction: row;
     justify-content: space-between;
     
 }
@@ -14,7 +15,7 @@
     flex-direction: row;
 }
 .image-container-collaboration{
-    justify-content: space-around;
+    justify-content: space-between;
     overflow: hidden;
     img{
         width: 6em;
@@ -22,6 +23,7 @@
         margin-left: 1em;
     }
     h5{
+        margin-left: 0.1em;
         max-width: 6em;
         font-size: 20px;
         text-align: center;
@@ -43,16 +45,24 @@
     text-align: center;
     padding: 1.5em 0.3em;
     grid-area: 5 / 2 / 6 / 4;
-    max-width: 30em;
+    width: 35vw;
 }
 
 .upace-contact{
+    width: 98vw;
     text-align: center;
     padding: 1.5em;
     grid-area: 5 / 4 / 6 / 5;
+    display: flex;
+    flex-wrap: wrap!important;
+    align-self: center!important;
+    justify-content: center;
 }
 .RRSS-container{
-    padding-top: 1.5em;
+    display: flex;
+    padding-left: 1em;
+    flex-direction: column;
+    margin: auto;
     img{
         width: 5rem;
         height: 5rem;
@@ -60,9 +70,39 @@
 }
 
 //MEDIA QUERYS
+@media (max-width: 460){
+    .RRSS-container{
+        flex-direction: column !important;
+    }
+}
+@media (max-width: 650px){
+    .ocupacional-contact{
+        width: 98vw
+    }
+}
+@media (max-width: 804px){
+    .upace-contact{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 1100px){
     .footer{
         flex-wrap: wrap!important;
         justify-content: center;
+    }
+}
+@media only screen and (min-width: 461px) and (max-width: 1141px){
+    .RRSS-container{
+        flex-direction: row;
+    }
+    .upace-contact{
+        justify-content: center;
+        width: 98vw;
+    }
+}
+@media (min-width: 1142px){
+    .upace-contact{
+        width: 30vw
     }
 }
