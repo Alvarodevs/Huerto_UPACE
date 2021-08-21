@@ -10,8 +10,11 @@
 .form-group{
     text-align: center;
 }
-.card:hover {
+.registration-form-container:hover {
     cursor: default;
+    img{
+        opacity:1;
+    }
 }
 #input{
     cursor: text;
@@ -25,5 +28,49 @@
     background-color: #fff;
     border-color: #FF3135;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem #FF3135;
+    box-shadow: 0 -0.3em 0.3em #FF3135;
+}
+
+.registration-button{
+    display: flex;
+    justify-content: center;
+    .btn-primary{
+        background-color: #32C965;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #259249;
+        border: none;
+    }
+    .btn-primary:focus{
+        box-shadow: none;
+        background-color: #259249;
+    }
+    .btn-primary:active{
+        background-color: #259249;
+    }
+}
+.close-button{
+    display: flex;
+    justify-content: end;
+    background-color: #fff!important;
+    border: none!important;
+    img{
+        width: 2em;
+    }
+    .btn-primary{
+        background-color: #FF3135;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #ff3134d7;
+        border: none;
+    }
+    .btn-primary:focus{
+        box-shadow: none!important;
+        background-color: #ff3134d7;
+    }
+    .btn-primary:active{
+        background-color: #ff3134d7;
+    }
 }

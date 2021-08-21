@@ -22,4 +22,14 @@
     .btn-primary:active{
         background-color: #259249;
     }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #fff;
+    }
+}
+.close-button:focus{
+        box-shadow: none!important;
 }
