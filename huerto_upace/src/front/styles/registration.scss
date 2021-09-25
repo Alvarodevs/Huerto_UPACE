@@ -4,8 +4,7 @@
     margin: auto;
     padding: 1em 2em;
     border: none;
-    box-shadow: 0.3em 0.3em 0.5em #32C965, -0.3em -0.3em 0.5em #32C965;
-    cursor: default;
+    box-shadow: 0 0 1em #32C965;
 }
 .form-group{
     text-align: center;
@@ -15,20 +14,22 @@
     img{
         opacity:1;
     }
+}a .nav_link{
+    align-self: center;
 }
-#input{
+.input{
     cursor: text;
     width: 100%;
     text-align: center;
     background-color: #fff;
-    border: none;
+    border: none !important;
 }
-#input:focus {
+.input:focus {
     color: #212529;
     background-color: #fff;
     border-color: #FF3135;
     outline: 0;
-    box-shadow: 0 -0.3em 0.3em #FF3135;
+    box-shadow: 0 -0.3em 0.3em #FF3135!important;
 }
 
 .registration-button{

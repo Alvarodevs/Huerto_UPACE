@@ -29,8 +29,8 @@ export const Login = (props) => {
 
                     <h3 className="mb-3"> Accede con tu usuario</h3>
 
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Group className="mb-3" controlId="formBasicUser">
+                        <Form.Control type="text" placeholder="Usuario/a" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Login } from './LoginForm';
 
 
@@ -10,10 +11,12 @@ export const Header = () => {
 
     return (
         <Navbar id="header" collapseOnSelect expand="lg" variant="light" >
-            <Navbar.Brand href="#home" className="logos-navbar">
-                <img src="images/logo_upace.jpg" alt="Logo upace" />
-                <img src="images/logo_aspace.jpg" alt="Logo aspace" />
-            </Navbar.Brand>
+            <Link to='/'>
+                <Navbar.Brand href="#home" className="logos-navbar">
+                    <img src="images/logo_upace.jpg" alt="Logo upace" />
+                    <img src="images/logo_aspace.jpg" alt="Logo aspace" />
+                </Navbar.Brand>
+            </Link>
 
 
 
@@ -24,15 +27,14 @@ export const Header = () => {
 
 
             <Nav className="buttons-container">
-                <Nav.Link><img className="button-navbar" src="images/info.svg" alt="Info icon" /></Nav.Link>
+                <Nav.Link className="info-icon"><img className="button-navbar" src="images/info.svg" alt="Info icon" /></Nav.Link>
 
                 <Nav.Link >
-                    
                     <img className="button-navbar" src="images/login-icon.svg" alt="Login icon" onClick={handleShow}/>
                     <Login show={show} onHide={() => setShow(false)}/>
                 </Nav.Link>
 
-                <Nav.Link><img className="button-navbar" src="images/shopping-basket.svg" alt="Cart" /></Nav.Link>
+                <Nav.Link><img className="button-navbar" src="images/shopping-cart.svg" alt="Cart" /></Nav.Link>
             </Nav>
         </Navbar >
     )

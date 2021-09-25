@@ -16,12 +16,16 @@
     display: flex !important;
     flex-direction: row !important;
     margin-right: 1rem;
+    justify-content: space-between;
 }
 .button-navbar{
     width: 2em;
-    margin-left: 0.5em;
+    margin: 0;
+    padding: 0!important;
 }
-
+.info-icon{
+    margin-right: 0.5em;
+}
 
 .header-title p{
     font-size: 2em;
@@ -40,16 +44,16 @@
     //     width: 3rem;
     // }
 };
-@media (max-width: 990px){
+@media (max-width: 992px){
     .header-title{
         display: none;
     }
     // .logos-navbar img{
     //     width: 7em;
     // }
-    // .button-navbar{
-    //     width: 3rem;
-    // }
+    .img[alt="Info icon"]{
+        padding-right: 1em;
+    }
     
 };
 @media (min-width: 641px){

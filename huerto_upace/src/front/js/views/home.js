@@ -1,8 +1,8 @@
 import React from 'react'
-import { AboutUs } from '../components/About';
-import { Gallery } from '../components/Gallery';
-import { Presentation } from '../components/Presentation';
-import { Products } from '../components/ProductCard';
+import { AboutUs } from '../components/home/About';
+import { Gallery } from '../components/home/Gallery';
+import { Presentation } from '../components/home/Presentation';
+import { Categories } from '../components/home/Categories';
 
 
 export const Home = () => {
@@ -10,7 +10,7 @@ export const Home = () => {
     return(
         <>
             <Presentation/>
-            <Products/>
+            <Categories/>
             <div className="container-about-gallery">
                 <AboutUs/>
                 <Gallery/>

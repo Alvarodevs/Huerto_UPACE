@@ -1,13 +1,14 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import "./header.scss";
 @import "./presentation.scss";
-@import "./products.scss";
+@import "./categories.scss";
 @import "./about.scss";
 @import "./gallery.scss";
 @import "./footer.scss";
 @import "./collaborators.scss";
 @import "./login.scss";
 @import "./registration.scss";
+@import "./product_card.scss";
 
 body{
     width: 100vw;
@@ -17,7 +18,6 @@ body{
     grid-template-rows: 0.5fr repeat(3, 1fr) repeat(2, 0.5fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    //box-sizing: border-box;
     overflow-x: hidden; 
     
 };
